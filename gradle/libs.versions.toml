@@ -1,0 +1,75 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.0"
+coreKtx = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+lifecycle_version = "2.7.0"
+room_version = "2.6.1"
+retrofit_version = "2.9.0"
+glide_version = "4.13.2"
+daggerHilt = "2.48"
+coroutines_version = "1.7.3"
+safeArgs = "2.7.7"
+navigation_version = "2.7.7"
+activity_version = "1.9.0"
+paging_version = "3.2.1"
+constraintlayout = "2.1.4"
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+#ViewModel
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle_version" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle_version" }
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle_version" }
+androidx-lifecycle-common-java8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "lifecycle_version" }
+
+#Room
+androidx-room-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
+kapt-androidx-room-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+androidx-room-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_version" }
+
+#Dagger - Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+kapt-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "daggerHilt" }
+
+#Retrofit
+squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit_version" }
+squareup-gsonConverter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit_version" }
+squareup-loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version = "5.0.0-alpha.6" }
+
+#Coroutines
+coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines_version" }
+
+#Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide_version" }
+glideCompiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide_version" }
+
+#Navigation
+navigationFragmentKtx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation_version" }
+navigationUiKtx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation_version" }
+
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity_version" }
+
+#Pag
+paging = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging_version"}
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt"}
+androidxNavigationSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "safeArgs"}
